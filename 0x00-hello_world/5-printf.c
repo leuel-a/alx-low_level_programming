@@ -5,11 +5,11 @@
  *
  * Description - This program prints out desired output using printf
  *
- * Return: Zero when program success 
+ * Return: Zero when program success
  */
 
-int main()
+int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
