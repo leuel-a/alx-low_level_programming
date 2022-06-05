@@ -18,8 +18,8 @@ int main(void)
 			goto here;
 		}
 		putchar(',');
-here:
 		putchar(' ');
+here:
 		putchar((n % 10) + '0');
 		n++;
 	}
