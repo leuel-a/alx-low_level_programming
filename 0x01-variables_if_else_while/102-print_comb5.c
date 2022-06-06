@@ -21,10 +21,10 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if (i == 0 && j == 0)
+					if (i == 0 && j == 0 && k == 0 && l == 1)
 					{
 						goto here;
-					} else if (k == 0 && l == 0)
+					} else if (i == 0 && j == 0 && k == 0 && l == 0)
 					{
 						continue;
 					}
