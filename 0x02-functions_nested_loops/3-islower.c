@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
- * main -Entry point of my program
- *
- * Return: Always zero on program success
- */
-
-int main(void)
-{
-	int r;
-
-	r = _islower('A');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
-}
-
-/**
  * _islower - Checks whether an alphabet is in lowercase
  * @c: it is the integer value of the lowercase letter in ASCII
  *
