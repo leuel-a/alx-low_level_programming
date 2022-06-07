@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * main - Entry point of my program
- *
- * Return: Zero upn program success
- */
-
-int main(void)
-{
-	int r;
-
-	r = _isalpha('A');
-	_putchar(r + '0');
-	r = _isalpha('0');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
-}
-
-/**
  * _isalpha - This function checks whether the character is an
  * alphabet
  * @c: This is where the value of the character is passed as an
