@@ -13,12 +13,20 @@ int main(void)
 
 	printf("%lu, %lu, ", n1, n2);
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 48; i++)
 	{
-		n3 = n1 + n2;
-		printf("%lu, ", n3);
-		n1 = n2;
-		n2 = n3;
+		if (i == 47)
+		{
+			n3 = n1 + n2;
+			printf("%lu", n3);
+		} else
+		{
+			n3 = n1 + n2;
+			printf("%lu, ", n3);
+			n1 = n2;
+			n2 = n3;
+		}
 	}
+	putchar('\n');
 	return (0);
 }
