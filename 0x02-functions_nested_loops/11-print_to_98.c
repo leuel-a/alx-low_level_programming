@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_to_98(0);
+    print_to_98(98);
+    print_to_98(111);
+    print_to_98(81);
+    print_to_98(-10);
+    return (0);
+}
+
+/**
  * print_to_98 - is a function that prints upto 98
  *
  * @n: The number who will serve as the initial
@@ -10,32 +25,26 @@
 
 void print_to_98(int n)
 {
-	int i;
-
-	for (i = n; i <= 98; i++)
+	int i, neg, pos;
+	while(i <= n)
 	{
-		if (i > 10)
+		if(i < 0)
 		{
-			if (i == n)
-			{
-				goto here;
-			}
-			_putchar(',');
-			_putchar(' ');
-here:
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-		} else
-		{
-			if (i == n)
-			{
-				goto there;
-			}
-			_putchar(',');
-			_putchar(' ');
-there:
 			_putchar(i + '0');
+			neg++;
 		}
+		i++;
 	}
-	_putchar('\n');
+	
+	i = 0;
+	
+	while(i <= n)
+	{
+		if(i > 0)
+		{
+			_putchar(i + '0');
+			pos++;
+		}
+		i++;
+	}
 }
