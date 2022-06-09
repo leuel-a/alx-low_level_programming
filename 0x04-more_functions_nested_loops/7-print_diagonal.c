@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - This function prints a diagonal 
+ * print_diagonal - This function prints a diagonal
  *
  * @n: Controls the diagonal to be printed
  * Return: Nothing
