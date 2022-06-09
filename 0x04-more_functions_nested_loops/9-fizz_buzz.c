@@ -25,10 +25,6 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		if ( i == 100)
-		{
-			break;
-		}
 		putchar(' ');
 	}
 	putchar('\n');
