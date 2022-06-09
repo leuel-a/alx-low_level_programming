@@ -12,6 +12,12 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
+		if (i == 1)
+		{
+			goto here;
+		}
+		putchar(' ');
+here:
 		if ((i % 3) == 0)
 		{
 			printf("Fizz");
