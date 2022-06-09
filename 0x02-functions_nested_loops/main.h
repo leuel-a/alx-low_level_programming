@@ -17,5 +17,6 @@ void print_times_table(int n);
 void one(int, int);
 void two(int, int);
 void three(int, int);
+int _isupper(int c);
 
 #endif
