@@ -13,7 +13,6 @@ int main(void)
 
 /**
  * i - This parameter controls while loop
- *
  * i = 0;
  * while (i < 10)
  * {
