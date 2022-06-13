@@ -2,7 +2,7 @@
 
 /**
  * swap_int - This function swaps two integers
- * @a: The first number 
+ * @a: The first number
  * @b: The second number
  *
  * Return: Nothing the function returns void
