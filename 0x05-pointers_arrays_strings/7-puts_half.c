@@ -16,9 +16,21 @@ void puts_half(char *s)
 		i++;
 	}
 	length = i;
-	for (j = length / 2; j < length; j++)
+	
+	if (length % 2 == 1)
 	{
-		_putchar(*(s + j));
+		int n = (length - 1) / 2;
+		for (j = n; j < length; j++)
+		{
+			_putchar(*(s + j));
+		}
+		_putchar('\n');
+	} else
+	{
+		for (j = length / 2; j < length; j++)
+		{
+			_putchar(*(s + j));
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
