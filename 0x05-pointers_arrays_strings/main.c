@@ -1,17 +1,17 @@
+#include "main.h"
 #include <stdio.h>
 
-void print_rev(char *);
-
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char *str;
+    char s[10] = "My School";
 
-	str = "Holberton!";
-	print_rev(str);
-	return (0);
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
+    return (0);
 }
