@@ -23,21 +23,3 @@ char *_strcat(char *dest, char *src)
 	dest[len + i] = '\0';
 	return (dest);
 }
-
-/**
- * _strlen - Finds the length of a string
- * @str: The string that will be checked
- * @x: This parameter will help us take count of how many
- * characters the string has, and must be supplied by the user
- * of the function
- *
- * Return: On success, it return the length of the string str.
- */
-
-
-int _strlen(char *str, int x)
-{
-	if (*str != '\0')
-		return (_strlen(str + 1, x + 1));
-	return (x);
-}
