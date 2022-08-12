@@ -37,8 +37,7 @@ char *_strcat(char *dest, char *src)
 
 int _strlen(char *str, int x)
 {
-        if (*str != '\0')
-                return (_strlen(str + 1, x + 1));
-        return (x);
+	if (*str != '\0')
+		return (_strlen(str + 1, x + 1));
+	return (x);
 }
-
