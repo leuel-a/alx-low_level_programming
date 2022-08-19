@@ -15,10 +15,9 @@ called the tail, points to NULL which helps us in determining when the list ends
 
 <pre>
 <p> struct Node {
-        int data;
-        struct Node *link;
+	int data;
+	struct Node *link;
 };
-
-<pre>
+</pre>
 <p> The above is a simple implementation of a linked list that contains only a single data within it </p>
 
