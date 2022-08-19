@@ -14,7 +14,7 @@ called the tail, points to NULL which helps us in determining when the list ends
 <h3> Example of a Singly Linked List </h3>
 
 <pre>
-<p> struct Node {
+<p>struct Node {
 	int data;
 	struct Node *link;
 };
