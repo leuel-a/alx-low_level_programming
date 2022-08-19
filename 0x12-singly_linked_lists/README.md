@@ -13,13 +13,11 @@ called the tail, points to NULL which helps us in determining when the list ends
 
 <h3> Example of a Singly Linked List </h3>
 
-<p> struct Node {
-	int data;
-	struct Node *link;
+<p> struct Node {<br>
+	int data;<br>
+	struct Node *link;<br>
 };
 </p>
-
-<br>
 
 <p> The above is a simple implementation of a linked list that contains only a single data within it </p>
 
