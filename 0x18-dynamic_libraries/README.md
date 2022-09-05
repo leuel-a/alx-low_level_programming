@@ -46,5 +46,5 @@ references to absolute locations. Global Offset Table(GOT) contains entries of f
 <h4>Steps for creating a <i>shared library</i>:</h4>
 
 1. <pre>gcc -Wall -Werror -std=gnu89 -Wextra -pedantic -fpic -c source1.c source2.c</pre>
-
+2. <pre>gcc -Wall -Werror -std=gnu89 -Wextra -pedantic -fpic source1.o source2.o -shared</pre>
 
