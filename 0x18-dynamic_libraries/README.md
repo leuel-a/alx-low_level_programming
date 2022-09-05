@@ -11,3 +11,9 @@ libraries. However, the object files from the dynamic library are not inserted i
 file. <br><br>Instead, when the program is started, a program in the system (called a dynamic loader) checks 
 out which shared libraries were linked with the program, loads them to memory, and attaches them to 
 the copy of the program in memory.</p>
+
+<h2> How to create a Shared/Dynamic Library</h2>
+<p>A shared library or shared object is a file that is intended to be shared by multiple programs. Symbols 
+used by a program are loaded from shared libraries into memory at load time or runtime.'.so' files are dynamic 
+libraries. The suffix stands for "shared object", because all the applications that are linked with the library 
+use the same file, rather than making a copy in the resulting executable.</p>
