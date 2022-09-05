@@ -18,4 +18,27 @@ used by a program are loaded from shared libraries into memory at load time or r
 libraries. The suffix stands for "shared object", because all the applications that are linked with the library 
 use the same file, rather than making a copy in the resulting executable.</p>
 
+<p>Shared Libraries should be compiled as <i>position-independet code</i>. The code within a dynamic executable is 
+typically position-dependent, and is tied to a fixed address in memory. Shared objects, on the other hand, can be loaded 
+at different addresses in different processes. Position-independent code is not tied to a specific address. This independence 
+allows the code to execute efficiently at a different address in each process that uses the code. Position-independent code 
+is recommended for the creation of shared objects. </p>
+
+<p>If a shared object is built from position-dependent code, the text segment can require modification at runtime. This 
+modification allows relocatable references to be assigned to the location that the object has been loaded. The relocation of the 
+text segment requires the segment to be remapped as writable. This modification requires a swap space reservation, and results in 
+a private copy of the text segment for the process. The text segment is no longer sharable between multiple processes. Position-dependent 
+code typically requires more runtime relocations than the corresponding position-independent code. Overall, the overhead of 
+processing text relocations can cause serious performance degradation.</p>
+
+<p>When a shared object is built from position-independent code, relocatable references are generated as indirections through data in 
+the shared object's data segment. The code within the text segment requires no modification. All relocation updates are applied to 
+corresponding entries within the data segment.</p>
+
+<h3>Global Offset Table</h3>
+<p>Position-independent code cannot, in general, contain absolute virtual addresses. Global offset tables hold absolute addresses in 
+private data. Addresses are therefore available without compromising the position-independence and shareability of a program's text. 
+A program references its GOT using position-independent addressing and extracts absolute values. This technique redirects position-independent 
+references to absolute locations.</p>
+
 
