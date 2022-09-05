@@ -43,4 +43,8 @@ references to absolute locations.</p>
 
 <p>Global Offset Table -- contains entries of functions that will be dynamically linked</p>
 
+Steps for creating a <i>shared library</i>:
+
+1. <pre>gcc -Wall -Werror -std=gnu89 -Wextra -pedantic -fpic -c source1.c source2.c</pre>
+
 
