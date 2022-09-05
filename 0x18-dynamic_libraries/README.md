@@ -35,8 +35,9 @@ processing text relocations can cause serious performance degradation.</p>
 the shared object's data segment. The code within the text segment requires no modification. All relocation updates are applied to 
 corresponding entries within the data segment.</p>
 
-<h3>Global Offset Table</h3>
 <hr>
+
+<h3>Global Offset Table</h3>
 <p>Position-independent code cannot, in general, contain absolute virtual addresses. Global offset tables hold absolute addresses in 
 private data. Addresses are therefore available without compromising the position-independence and shareability of a program's text. 
 A program references its GOT using position-independent addressing and extracts absolute values. This technique redirects position-independent 
