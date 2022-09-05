@@ -14,6 +14,8 @@ the copy of the program in memory.</p>
 
 <h2> How to create a Shared/Dynamic Library</h2>
 <p>A shared library or shared object is a file that is intended to be shared by multiple programs. Symbols 
-used by a program are loaded from shared libraries into memory at load time or runtime.'.so' files are dynamic 
+used by a program are loaded from shared libraries into memory at load time or runtime.i<br><br>'.so' files are dynamic 
 libraries. The suffix stands for "shared object", because all the applications that are linked with the library 
 use the same file, rather than making a copy in the resulting executable.</p>
+
+
