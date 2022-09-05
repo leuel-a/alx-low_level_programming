@@ -39,9 +39,7 @@ corresponding entries within the data segment.</p>
 <p>Position-independent code cannot, in general, contain absolute virtual addresses. Global offset tables hold absolute addresses in 
 private data. Addresses are therefore available without compromising the position-independence and shareability of a program's text. 
 A program references its GOT using position-independent addressing and extracts absolute values. This technique redirects position-independent 
-references to absolute locations.</p>
-
-<p>Global Offset Table -- contains entries of functions that will be dynamically linked</p>
+references to absolute locations. Global Offset Table(GOT) contains entries of functions that will be dynamically linked</p>
 
 Steps for creating a <i>shared library</i>:
 
