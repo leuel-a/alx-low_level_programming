@@ -41,4 +41,6 @@ private data. Addresses are therefore available without compromising the positio
 A program references its GOT using position-independent addressing and extracts absolute values. This technique redirects position-independent 
 references to absolute locations.</p>
 
+<p>Global Offset Table -- contains entries of functions that will be dynamically linked</p>
+
 
