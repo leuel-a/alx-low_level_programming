@@ -7,15 +7,15 @@ the singly linked list.</p>
 
 <p>The data structure used in this project:</p>
 <pre>
-/\*\*
- \* struct dlistint_s - doubly linked list
- \* @n: integer
- \* @prev: points to the previous node
- \* @next: points to the next node
- \*
- \* Description: doubly linked list node structure
- \* 
- \*/
+/&#42&#42
+ &#42 struct dlistint_s - doubly linked list
+ &#42 @n: integer
+ &#42 @prev: points to the previous node
+ &#42 @next: points to the next node
+ &#42
+ &#42 Description: doubly linked list node structure
+ &#42 
+ &#42/
 typedef struct dlistint_s
 {
     int n;
