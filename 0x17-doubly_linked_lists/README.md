@@ -6,6 +6,7 @@ sequentially linked records called nodes. Each node contains three fields: two
 the singly linked list.</p>
 
 <p>The data structure used in this project:</p>
+<pre>
 /\*\*
  \* struct dlistint_s - doubly linked list
  \* @n: integer
@@ -21,3 +22,4 @@ typedef struct dlistint_s
     struct dlistint_s *prev;
     struct dlistint_s *next;
 } dlistint_t;
+</pre>
