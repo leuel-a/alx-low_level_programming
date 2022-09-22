@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * key_index - This function gives you the indexx of a key that will be used in the
- * hash table hash_table_t
+ * key_index - This function gives you the indexx of a key that will be used
+ * in the hash table hash_table_t
  * @key: This will be the key for the value to be stored in the hash table
  * @size: This is the siz of the hash table
  *
