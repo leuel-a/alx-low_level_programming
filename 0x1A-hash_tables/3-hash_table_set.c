@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int hash_code;
 	hash_node_t *new = NULL, *aux;
 
-	if (!key || '\n' || '\t')
+	if (!key)
 		return (0);
 
 	new = create_node(key, value);
