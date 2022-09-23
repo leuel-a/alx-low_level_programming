@@ -12,7 +12,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int hash_code;
-	hash_node_t *new = NULL, *aux;
+	hash_node_t *new = NULL;
 
 	if (key == NULL)
 		return (0);
@@ -44,9 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		new->next = NULL;
 		return (1);
 	}
-	aux = ht->array[hash_code];
-	while (aux->next != NULL)
-		aux = aux->next;
-	aux->next = new;
+	new->next = ht->array[hash_code];
+	ht->array[hash_code] = new;
 	return (1);
 }
