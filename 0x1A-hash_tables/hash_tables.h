@@ -82,5 +82,8 @@ void hash_table_delete(hash_table_t *ht);
 void free_hash_list(hash_node_t *head);
 shash_table_t *shash_table_create(unsigned long int size);
 int shash_table_set(shash_table_t *ht, const char *key, const char *value);
+void sort_shash_table(shash_table_t *ht, shash_node_t *new);
+shash_node_t *create_snode(const char *key, const char *value);
+void shash_table_print(const shash_table_t *ht);
 
 #endif
