@@ -1,14 +1,11 @@
 # -*- MakeFile -*-
-
-SRC = main.c school.c
 CC = gcc
+SRC = main.c school.c m.h
 
-all: school
+.PHONY: all clean
 
-school: $(SRC)
+all:
 	$(CC) $(SRC) -o school
-
-.PHONY: clean
 
 clean:
 	rm school
