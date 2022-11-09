@@ -7,20 +7,24 @@ island_perimeter finds the perimeter of an island described in `grid`
         > 0 represents a water zone
         > 1 represents a land zone
         > One cell is a square with side length 1
-        > Grid cells are connected horizontally/vertically (not diagonally).
+        > Grid cells are connected horizontally/vertically
+            (not diagonally).
         > Grid is rectangular, width and height don`t exceed 100
-    -- Grid is completely surrounded by water, and there is one island (or nothing).
-    -- The island doesn`t have “lakes” (water inside that isn`t connected to the water around the island).
+    -- Grid is completely surrounded by water, and there is one
+            island (or nothing).
+    -- The island doesn`t have “lakes” (water inside that isn`t
+        connected to the water around the island).
 """
+
 
 def island_perimeter(grid) -> int:
     """Finds the perimeter of an island described in `grid`
-    
+
     Args:
         grid (list): the grid that will have the island
 
     Returns:
-        (int): perimeter of the island described in the grid    
+        (int): perimeter of the island described in the grid
     """
     width = len(grid[0])
     height = len(grid)
@@ -36,6 +40,3 @@ def island_perimeter(grid) -> int:
                 if (i > 0 and grid[i - 1][j] == 1):
                     edges += 1
     return size * 4 - edges * 2
-
-
-
