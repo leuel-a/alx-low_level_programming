@@ -1,0 +1,37 @@
+# -*- MakeFile -*-
+# Constants
+#============================================================
+# Specify the C Compiler
+CC = gcc
+
+# Source files that will be compiled, .c files
+SRC = main.c school.c
+
+# Object files that will be linked finally, .o files
+OBJ = $(SRC:.c=.o)
+
+# Name of the executable
+NAME = school
+
+# The program to delete files
+RM = rm
+# ===========================================================
+
+# Rules
+# ===========================================================
+# Builds the executable
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+.PHONY: clean oclean fclean re
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
