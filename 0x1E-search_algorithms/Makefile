@@ -3,7 +3,7 @@
 # Constants
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
-SRC = 0-linear.c main.c
+SRC = 0-linear.c 1-binary.c main.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm
