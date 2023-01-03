@@ -15,6 +15,12 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t left, right, middle, i, check;
 
+	/**
+	 * Check for if a NULL array has been passed
+	*/
+	if (array == NULL)
+		return (-1);
+
 	check = 0;
 	left = 0, right = size - 1;
 	while (left <= right)
