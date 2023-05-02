@@ -1,8 +1,0 @@
-# -*- MakeFile -*-
-.PHONY: all clean
-
-all:
-	gcc main.c school.c -o school
-
-clean:
-	rm school
