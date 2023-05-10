@@ -50,3 +50,27 @@ int exponential_search(int *array, size_t size, int value)
 	}
 	return (-1);
 }
+
+
+/**
+ * print_subarray - prints the subarray that is being searched
+ * in the array
+ * @start: the start index of the subarray
+ * @end: the end index of the subarray
+ * @array: the array to be searched
+ *
+ * Return: Nothing.
+ */
+void print_subarray(int *array, int start, int end)
+{
+        int i;
+
+        printf("Searching in array: ");
+        for (i = start; i <= end; i++)
+        {
+                if (i != start)
+                        printf(", ");
+                printf("%d", array[i]);
+        }
+        putchar('\n');
+}
