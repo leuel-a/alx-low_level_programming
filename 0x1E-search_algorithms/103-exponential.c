@@ -63,14 +63,14 @@ int exponential_search(int *array, size_t size, int value)
  */
 void print_subarray(int *array, int start, int end)
 {
-        int i;
+	int i;
 
-        printf("Searching in array: ");
-        for (i = start; i <= end; i++)
-        {
-                if (i != start)
-                        printf(", ");
-                printf("%d", array[i]);
-        }
-        putchar('\n');
+	printf("Searching in array: ");
+	for (i = start; i <= end; i++)
+	{
+		if (i != start)
+			printf(", ");
+		printf("%d", array[i]);
+	}
+	putchar('\n');
 }
