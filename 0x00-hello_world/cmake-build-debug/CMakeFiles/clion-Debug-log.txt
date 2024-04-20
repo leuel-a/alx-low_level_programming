@@ -1,5 +1,5 @@
 /home/leuel/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/leuel/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/leuel/projects/alx/alx-low_level_programming/0x00-hello_world -B /home/leuel/projects/alx/alx-low_level_programming/0x00-hello_world/cmake-build-debug
-CMake Error at CMakeLists.txt:7:
+CMake Error at CMakeLists.txt:9:
   Parse error.  Expected a command name, got unquoted argument with text
   "CMakeLists.txt".
 
