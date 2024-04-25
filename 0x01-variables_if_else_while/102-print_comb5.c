@@ -17,25 +17,25 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if (k > i || (k == i && l > j))
+					if (k < i || (k == i && l <= j))
+						continue;
+
+					if (first == 1)
 					{
-						if (first == 1)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-
-						if (first == 0)
-							first = 1;
-
-						putchar('0' + i);
-						putchar('0' + j);
-
+						putchar(',');
 						putchar(' ');
-
-						putchar('0' + k);
-						putchar('0' + l);
 					}
+
+					if (first == 0)
+						first = 1;
+
+					putchar('0' + i);
+					putchar('0' + j);
+
+					putchar(' ');
+
+					putchar('0' + k);
+					putchar('0' + l);
 				}
 			}
 		}
