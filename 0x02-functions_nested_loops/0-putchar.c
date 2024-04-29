@@ -1,5 +1,10 @@
 #include "_putchar.c"
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char *print_text = "_putchar";
