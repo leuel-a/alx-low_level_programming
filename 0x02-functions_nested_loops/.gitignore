@@ -1,8 +1,10 @@
 cmake-build-debug
-*main*
+*main.c
 CMakeLists.txt
 
 # Idea Files
 .idea
 
 a.out
+
+_putchar.c
